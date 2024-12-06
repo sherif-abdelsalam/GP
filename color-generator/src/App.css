@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Parkinsans", sans-serif;
+  display: flex;
+  width: 100%;
+  letter-spacing: 2px;
+  position: relative;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 118px;
+  background-color: #ffffff69;
+
+  position: sticky;
+  top: 0;
+}
+.logo-img-text {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  width: 100px;
+}
+.logo-txt {
+  font-size: 2rem;
+  color: #ffffff;
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.btn-nav button {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0c929;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.btn-nav button:hover {
+  border-bottom: solid 2px #f0c929;
+}
+/*Content*/
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Welcome */
+.welcome-screen {
+  display: flex;
+  height: calc(100vh - 150px);
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.welcome-screen h1 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.welcome-screen h1 span {
+  color: #f0c929;
+}
+.welcome-screen p {
+  font-size: 2rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.start-now button {
+  background-color: #f0c929;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+}
+
+.start-now button:hover {
+  background: none;
+
+  border: 2px solid #f0c929;
+  color: #f0c929;
+}
+
+/* Main section */
+#main-section {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center; /*  */
+  flex-direction: column;
+
+  width: 80%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff18;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* Heading */
+#main-section h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f0c929;
+}
+
+/* Dropzone */
+.dropzone {
+  width: 80%;
+  border: 2px dashed #f0c929;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 200px;
+  background-color: #ffffff18;
+}
+.dropzone p {
+  font-size: 22px;
+  color: #f0c929;
+}
+/* Uploaded image inside dropzone */
+.uploaded-image {
+  max-height: 200px;
+  max-width: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+/* Button styling */
+.image-preview-button {
+  background-color: #f0c929;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+}
+
+.image-preview-button:hover {
+  background-color: #3700b3;
+}
+
+/* Result Section */
+#result {
+  width: 80%;
+  /* background-color: #bb0000; */
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#result .box {
+  display: flex;
+}
+
+.box .color-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+.box .color-code {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.btn-new-pallette {
+  font-size: 14pt;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+.btn-new-pallette:hover {
+  background-color: #000;
+}
+
+.about-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+.title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6%;
+}
+.title h2 {
+  margin-bottom: 20px;
+}
+.title p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-content img {
+  width: 40%;
+}
+
+.about-info {
+  width: 60%;
+}
+.about-info p {
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.about-info a {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 60px;
+  color: #f0c929;
+  text-decoration: none;
+  background-color: #f0c929;
+  color: #333;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.about-info a:hover {
+  background: none;
+  color: #f0c929;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-top: 60px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 24px;
+  background: radial-gradient(circle closest-side, #f0c929 94%, #0000)
+    left/calc(200% - 1em) 150%; /* Increased circle size */
+  animation: reverse-l24 3s infinite alternate linear;
+}
+.loader::before {
+  content: "Wait Until Generating Your Palette...";
+  line-height: 1em;
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side, #fff 94%, #f0c929);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes reverse-l24 {
+  100% {
+    background-position: right;
+  }
+}
+#main-section .new-palette button {
+  padding: 10px 20px;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  /* position: absolute;
+  right: 0; */
+}
+
+#main-section .new-palette button:hover {
+  background-color: #000;
+}
+
+.children {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
