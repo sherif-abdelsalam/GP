@@ -2,7 +2,10 @@ import { forwardRef, useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 const MainSectoin = forwardRef(
-  ({ selectedFile, setSelectedFile, setColorPalette, children }, ref) => {
+  (
+    { selectedFile, setSelectedFile, setColorPalette, ChangePalette, children },
+    ref
+  ) => {
     const [loading, setLoading] = useState(false); // Manage loading state
 
     const onDrop = useCallback(
@@ -88,9 +91,9 @@ const MainSectoin = forwardRef(
         <div className="children">
           {children}
 
-          {/* <div className="new-palette">
+          <div className="new-palette">
             <button onClick={ChangePalette}>New Palette</button>
-          </div> */}
+          </div>
         </div>
       </div>
     );

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -10,17 +10,21 @@ import Result from "./components/Result";
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [colorPalettes, setColorPalettes] = useState([]);
-  // const [colorPalette, setColorPalette] = useState([]);
+  const [colorPalette, setColorPalette] = useState([]);
 
-  // function ChangePalette() {
-  //   if (!colorPalettes || colorPalettes.length === 0) {
-  //     alert("No color palettes available.\n Gnerate new one first !");
-  //     return;
-  //   }
-  //   const nextIndex =
-  //     (colorPalettes.indexOf(colorPalette) + 1) % colorPalettes.length;
-  //   setColorPalette(colorPalettes[nextIndex]);
-  // }
+  useEffect(() => {
+    setColorPalette(colorPalettes[0]);
+  }, [colorPalettes]);
+
+  function ChangePalette() {
+    if (!colorPalettes || colorPalettes.length === 0) {
+      alert("No color palettes available.\n Gnerate new one first !");
+      return;
+    }
+    const nextIndex =
+      (colorPalettes.indexOf(colorPalette) + 1) % colorPalettes.length;
+    setColorPalette(colorPalettes[nextIndex]);
+  }
 
   const startNowRef = useRef(null);
   const scrollToMainArea = () => {
@@ -66,9 +70,9 @@ function App() {
           setSelectedFile={setSelectedFile}
           selectedFile={selectedFile}
           setColorPalette={setColorPalettes}
-          // ChangePalette={ChangePalette}
+          ChangePalette={ChangePalette}
         >
-          <Result colorPalette={colorPalettes[0]} />
+          <Result colorPalette={colorPalette} />
         </MainSectoin>
         <AboutApp ref={aboutRef} />
         <Footer />
