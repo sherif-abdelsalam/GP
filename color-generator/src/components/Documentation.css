@@ -1,4 +1,3 @@
-/* General Styles */
 .documentation-container {
   max-width: 900px;
   margin: 0 auto;
@@ -39,6 +38,34 @@
   font-weight: bold;
   color: #ffefad;
 }
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rounded-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.rounded-image:hover {
+  transform: scale(1.05);
+  margin-bottom: 12px;
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+  font-style: italic;
+}
+
 .team-list {
   list-style: none;
   padding: 0;

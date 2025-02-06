@@ -88,7 +88,6 @@ function App() {
                         />
                         <Route path="/docs" element={<Documentation />} />
                         <Route path="/about" element={<AboutApp />} />
-                        {/* Add more routes here if needed */}
                     </Routes>
                 </div>
             </div>

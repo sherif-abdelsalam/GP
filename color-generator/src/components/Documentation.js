@@ -21,6 +21,7 @@ function Documentation() {
                 <p>
                     <strong >Paletto</strong> was created to revolutionize this process, transforming color selection into an intuitive and creative experience.
                 </p>
+
             </section>
 
             {/* <section className="doc-section">
@@ -41,10 +42,14 @@ function Documentation() {
                 <article className="model-article">
                     <h3>1. U2-NET Model</h3>
                     <p>
-                        We use the U2-NET model to extract focal objects from images. It is a deep-learning model that excels at identifying important areas in images. This model will work well for our task of detecting key elements (focal objects) in designs. Its architecture is advanced, as shown in Figure 2 [10].
+                        We use the U2-NET model to extract focal objects from images. It is a deep-learning model that excels at identifying important areas in images. This model will work well for our task of detecting key elements (focal objects) in designs. Its architecture is advanced, as shown in Figure 1.
                     </p>
                     <p><strong>Input:</strong> Preprocessing image</p>
                     <p><strong>Output:</strong> Focal object</p>
+                    <div className="image-container">
+                        <img src="u2_net.jpg" alt="Paletto" className="rounded-image" />
+                        <p className="image-caption">Figure 1 : U2-NET Model Architecture</p>
+                    </div>
                 </article>
 
                 <article className="model-article">
