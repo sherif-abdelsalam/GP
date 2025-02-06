@@ -1,0 +1,110 @@
+/* General Styles */
+.documentation-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.doc-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.doc-header h2 {
+  font-size: 3rem;
+  color: #f0c929;
+  margin: 0;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+}
+
+.doc-section {
+  margin-bottom: 8%;
+}
+
+.doc-section h2 {
+  font-size: 2rem;
+  color: #d4d4d4;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f0c929;
+  padding-bottom: 5px;
+}
+
+.doc-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+.doc-section strong {
+  font-weight: bold;
+  color: #ffefad;
+}
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.team-list li {
+  font-size: 1rem;
+  color: #f0c929;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.model-article {
+  margin-bottom: 40px;
+}
+
+.model-article h3 {
+  color: #d3c500;
+  margin-bottom: 20px;
+}
+.model-article h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.model-article p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.model-article strong {
+  font-weight: bold;
+  color: #ffefad;
+}
+
+/* Links */
+a {
+  color: #f0c929;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: #f0c929;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}

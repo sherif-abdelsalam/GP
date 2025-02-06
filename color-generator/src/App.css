@@ -5,8 +5,9 @@
   padding: 0;
 }
 body {
-  font-family: "Parkinsans", sans-serif;
+  font-family: "inter", sans-serif;
   display: flex;
+  flex-direction: column;
   width: 100%;
   letter-spacing: 2px;
   position: relative;
@@ -25,9 +26,23 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   height: 118px;
   background-color: #ffffff69;
-
   position: sticky;
   top: 0;
+}
+/* Style for active navigation item */
+.header nav ul li.active button {
+  background-color: #f0c929; /* Change the background color */
+  color: white; /* Change the text color */
+  border: none; /* Remove border if necessary */
+}
+
+.header nav ul li.active button:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Optional: Add some spacing or padding for better appearance */
+.header nav ul li.active {
+  margin: 0 5px; /* Adjust as needed */
 }
 .logo-img-text {
   display: flex;
@@ -231,7 +246,10 @@ nav ul {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 4%;
   margin-bottom: 10%;
+  /*center this in the middle of the screen*/
+  text-align: center;
 }
 .title {
   margin-bottom: 20px;
@@ -260,9 +278,6 @@ nav ul {
   width: 40%;
 }
 
-.about-info {
-  width: 60%;
-}
 .about-info p {
   color: #ddd;
   font-size: 1.2rem;
