@@ -52,25 +52,20 @@ function App() {
         }
     };
 
-    window.addEventListener(
-        "scroll",
-        function hideContent() {
-            const h = document.getElementById("content");
-            h.style.clipPath = "inset(" + this.window.pageYOffset + "px 0% 0% 0%)";
-        },
-        false
-    );
+
 
     return (
         <Router>
             <div>
                 <Header scrollToAbout={scrollToAbout} scrollToHome={scrollToHome} />
+
                 <div id="content">
                     <Routes>
                         <Route
                             path="/"
                             element={
                                 <>
+
                                     <WelcomeScreen scrollToMainArea={scrollToMainArea} ref={homeRf} />
                                     <MainSectoin
                                         ref={startNowRef}

@@ -1,0 +1,28 @@
+#result {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+#result .box {
+  display: flex;
+  border: none;
+  background: none;
+}
+
+.box .color-box {
+  width: 100px;
+  height: 100px;
+  background: none;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.box .color-code {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--primary-color);
+  text-align: center;
+}

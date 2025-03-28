@@ -1,0 +1,40 @@
+.welcome-screen {
+  height: 100vh;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding: 0 96px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: start;
+  line-height: 1.2;
+}
+
+h1 span {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  text-align: start;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--text-main-color);
+  letter-spacing: 1px;
+}

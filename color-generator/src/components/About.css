@@ -1,0 +1,26 @@
+.about-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  /*center this in the middle of the screen*/
+  text-align: center;
+}
+.title {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-info p {
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-size: 18px;
+  color: var(--text-primary-color);
+}

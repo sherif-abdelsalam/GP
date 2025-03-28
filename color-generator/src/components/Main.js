@@ -1,13 +1,14 @@
 import { forwardRef, useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
+import Loader from "./Loader";
+import "./Main.css";
 
-const MainSectoin = forwardRef(
+const MainSection = forwardRef(
     (
         { selectedFile, setSelectedFile, setColorPalette, ChangePalette, children },
         ref
     ) => {
         const [loading, setLoading] = useState(false); // Manage loading state
-
         const onDrop = useCallback(
             (acceptedFiles) => {
                 const file = acceptedFiles[0];
@@ -63,8 +64,8 @@ const MainSectoin = forwardRef(
         });
 
         return (
-            <div id="main-section" ref={ref}>
-                <h1>Create a Color Palette</h1>
+            <div className="main-section" ref={ref}>
+                <h3>Start by uploading any image to extract its colors <br /> to create a color palette</h3>
                 <div {...getRootProps()} className="dropzone">
                     <input {...getInputProps()} />
                     {selectedFile ? (
@@ -76,23 +77,25 @@ const MainSectoin = forwardRef(
                     ) : isDragActive ? (
                         <p>Drop the image here...</p>
                     ) : (
-                        <p>Drag and drop an image here, or click to select one</p>
+                        <div className="drag-drop">
+                            <img src="/darg.svg" alt="Upload" />
+                            <p className="drag-drop-text">Drag and drop image here, or click to select one</p>
+                        </div>
                     )}
                 </div>
 
                 {/* Button to generate color palette */}
-                <button className="image-preview-button" onClick={handleCreatePalette}>
+                <button className="btn image-preview-button" onClick={handleCreatePalette}>
                     Generate Color Palette
                 </button>
 
                 {/* Loader */}
                 {loading && <Loader />}
 
-                <div className="children">
+                <div className="color-palette-container">
                     {children}
-
-                    <div className="new-palette">
-                        <button onClick={ChangePalette}>New Palette</button>
+                    <div>
+                        <button className="btn new-palette" onClick={ChangePalette}>New Palette</button>
                     </div>
                 </div>
             </div>
@@ -100,8 +103,5 @@ const MainSectoin = forwardRef(
     }
 );
 
-export default MainSectoin;
+export default MainSection;
 
-function Loader() {
-    return <div className="loader"></div>;
-}

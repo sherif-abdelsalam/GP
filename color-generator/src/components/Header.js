@@ -1,40 +1,37 @@
 import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 function Header(props) {
-    const location = useLocation(); // Get the current location using useLocation
+    const location = useLocation();
 
-    // Function to check if the current route matches the given path
     const isActive = (path) => {
         return location.pathname === path;
     };
 
     return (
         <header className="header">
-            <div className="logo-img-text">
-                <img className="logo-img" src="logo.png" alt="logo" />
-                <div className="logo-txt">PALETTO</div>
+            <div>
+                <div className="logo-text">Paletto</div>
             </div>
-            <nav>
-                <ul>
-                    {/* HOME */}
-                    <li className={`btn-nav ${isActive("/") ? "active" : ""}`}>
-                        <Link to="/">
-                            <button onClick={props.scrollToHome}>HOME</button>
-                        </Link>
-                    </li>
-                    {/* ABOUT */}
-                    <li className={`btn-nav ${isActive("/about") ? "active" : ""}`}>
-                        <Link to="/about">
-                            <button onClick={props.scrollToAbout}>ABOUT</button>
-                        </Link>
-                    </li>
-                    {/* DOCS */}
-                    <li className={`btn-nav ${isActive("/docs") ? "active" : ""}`}>
-                        <Link to="/docs">
-                            <button>DOCS</button>
-                        </Link>
-                    </li>
-                </ul>
+            <nav className="nav-list">
+                {/* HOME */}
+                <li className={isActive("/") ? "active" : ""}>
+                    <Link to="/">
+                        <button onClick={props.scrollToHome}>Home</button>
+                    </Link>
+                </li>
+                {/* ABOUT */}
+                <li className={isActive("/about") ? "active" : ""}>
+                    <Link to="/about">
+                        <button onClick={props.scrollToAbout}>About</button>
+                    </Link>
+                </li>
+                {/* DOCS */}
+                <li className={isActive("/docs") ? "active" : ""}>
+                    <Link to="/docs">
+                        <button>Docs</button>
+                    </Link>
+                </li>
             </nav>
         </header>
     );

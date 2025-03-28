@@ -11,32 +11,37 @@
 
 .doc-header h2 {
   font-size: 3rem;
-  color: #f0c929;
-  margin: 0;
-  letter-spacing: 2px;
-  margin-bottom: 80px;
-}
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 
-.doc-section {
-  margin-bottom: 8%;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
 }
 
 .doc-section h2 {
   font-size: 2rem;
-  color: #d4d4d4;
+  color: var(--text-primary-color);
   margin-bottom: 10px;
-  border-bottom: 2px solid #f0c929;
+  border-bottom: 2px solid var(--text-secondary-color);
   padding-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 .doc-section p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
-  color: #ddd;
+  color: var(--text-primary-color);
 }
 .doc-section strong {
   font-weight: bold;
-  color: #ffefad;
+  color: var(--text-secondary-color);
 }
 
 .image-container {
@@ -89,23 +94,25 @@
 }
 
 .model-article h3 {
-  color: #d3c500;
+  color: var(--primary-color);
   margin-bottom: 20px;
+  font-size: medium;
 }
 .model-article h4 {
-  color: #ffffff;
+  color: var(--secondary-color);
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
 .model-article p {
-  font-size: 1rem;
-  color: #ddd;
+  font-size: 14px;
+  color: var(--text-primary-color);
   margin-bottom: 10px;
 }
 
 .model-article strong {
   font-weight: bold;
-  color: #ffefad;
+  color: var(--text-secondary-color);
 }
 
 /* Links */
@@ -117,21 +124,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Buttons */
-button {
-  background-color: #f0c929;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #3700b3;
 }

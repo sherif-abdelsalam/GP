@@ -15,13 +15,10 @@ function Documentation() {
                     What is the main problem that you are solving?
                 </h2>
                 <p>
-                    Choosing the right colors for design elements in UI/UX and graphic design is a complex but essential task. Studies show that color influences between 62% to 90% of consumer decisions, highlighting the critical role of color selection in achieving the desired emotional and visual impact. However, designers often face challenges in finding harmonious color palettes that align with their design goals. This process can be time-consuming and stressful, especially when managing multiple design elements and testing numerous combinations manually.
-                </p>
-                <br />
-                <p>
+                    Choosing the right colors for design elements in UI/UX and graphic design is a complex but essential task. Studies show that color influences between 62% to 90% of consumer decisions, highlighting the critical role of color selection in achieving the desired emotional and visual impact. However, designers often face challenges in finding harmonious color palettes that align with their design goals. This process can be time-consuming and stressful, especially when managing multiple design elements and testing numerous combinations manually. <br /> <br />
                     <strong >Paletto</strong> was created to revolutionize this process, transforming color selection into an intuitive and creative experience.
-                </p>
 
+                </p>
             </section>
 
             {/* <section className="doc-section">
@@ -51,7 +48,7 @@ function Documentation() {
                         <p className="image-caption">Figure 1 : U2-NET Model Architecture</p>
                     </div>
                 </article>
-
+                <br />
                 <article className="model-article">
                     <h3>2. K-Mean Algorithm for Clustering</h3>
                     <p>
@@ -60,6 +57,7 @@ function Documentation() {
                     <p><strong>Input:</strong> Focal object</p>
                     <p><strong>Output:</strong> Basic palette (3 colors)</p>
                 </article>
+                <br />
 
                 <article className="model-article">
                     <h3>3. Palette Model (GMM) and Palette Search (MCTS) Algorithms</h3>
@@ -71,6 +69,9 @@ function Documentation() {
                         <p><strong>Input:</strong> Basic palette</p>
                         <p><strong>Output:</strong> Generation of new colors (Extended palettes)</p>
                     </article>
+
+                    <br />
+
                     <article>
                         <h4>3.2 Monte Carlo Tree Search (MCTS)</h4>
                         <p>
@@ -80,6 +81,7 @@ function Documentation() {
                         <p><strong>Output:</strong> A set of improved colors for generating extended color palettes</p>
                     </article>
                 </article>
+                <br />
 
                 <article className="model-article">
                     <h3>4. Algorithms for Assigning Colors to Layers of Design</h3>
@@ -90,6 +92,8 @@ function Documentation() {
                         </p>
                         <p><strong>Require:</strong> Extended palette, average-color, focal-object, layers</p>
                     </article>
+                    <br />
+
                     <article>
                         <h4>4.2 PL Algorithm for Assigning Colors</h4>
                         <p>
@@ -97,6 +101,7 @@ function Documentation() {
                         </p>
                         <p><strong>Require:</strong> Extended palette, average-color, focal-object, layers</p>
                     </article>
+                    <br />
                     <article>
                         <h4>4.3 Sequential Algorithm for Assigning Colors</h4>
                         <p>

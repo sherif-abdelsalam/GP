@@ -1,11 +1,11 @@
+import "./About.css";
 function AboutApp() {
     return (
         <section className="about-container">
             <div className="title">
-                <h2 style={{ textTransform: "uppercase" }}>
+                <h2>
                     Identify Color Palette from Any Image in Seconds
                 </h2>
-                <p>More than 25+ years of experience</p>
             </div>
 
             <div className="about-content">
@@ -22,7 +22,7 @@ function AboutApp() {
                         color palette from any picture, Picsart can help.
                     </p>
                 </div>
-                {/* <img src="about_img.png" alt="Pizza" /> */}
+
             </div>
         </section>
     );
