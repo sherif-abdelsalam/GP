@@ -22,7 +22,6 @@
   display: inline-block;
 
   letter-spacing: 1px;
-  margin-bottom: 24px;
 }
 
 .doc-section h2 {
@@ -36,36 +35,22 @@
 
 .doc-section p {
   font-size: 16px;
-  line-height: 1.6;
   color: var(--text-primary-color);
-}
-.doc-section strong {
-  font-weight: bold;
-  color: var(--text-secondary-color);
 }
 
 .image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
 .rounded-image {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.rounded-image:hover {
-  transform: scale(1.05);
-  margin-bottom: 12px;
 }
 
 .image-caption {
-  margin-top: 10px;
   font-size: 0.9rem;
   color: #aaa;
   font-style: italic;
@@ -86,42 +71,19 @@
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 15px;
   border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.model-article {
-  margin-bottom: 40px;
 }
 
 .model-article h3 {
   color: var(--primary-color);
-  margin-bottom: 20px;
   font-size: medium;
 }
 .model-article h4 {
   color: var(--secondary-color);
-  margin-bottom: 10px;
   font-size: 15px;
 }
 
 .model-article p {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-primary-color);
-  margin-bottom: 10px;
-}
-
-.model-article strong {
-  font-weight: bold;
-  color: var(--text-secondary-color);
-}
-
-/* Links */
-a {
-  color: #f0c929;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
+  margin-bottom: 0;
 }

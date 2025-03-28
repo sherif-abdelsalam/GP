@@ -24,6 +24,19 @@ function AboutApp() {
                 </div>
 
             </div>
+
+            <div className="team-members">
+                <div className="team-title">Team <br />Members</div>
+                <ul>
+                    <li>Salah Ayman Fawzi Mostafa</li>
+                    <li>Basel Ashraf Ahmed Mohamed </li>
+                    <li>Aml Shehta Mohamed Elmonairy</li>
+                    <li>Mayar Mohamed Hassan Basuni</li>
+                    <li>Nada Saied Ibrahim Mohamed</li>
+                    <li>Sayed Ahmed Sayed Ahmed</li>
+                    <li>Sherif Mohamed Mohamed Abdelsalam</li>
+                </ul>
+            </div>
         </section>
     );
 }

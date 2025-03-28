@@ -20,20 +20,6 @@ function Documentation() {
 
                 </p>
             </section>
-
-            {/* <section className="doc-section">
-                <h2>Team Members</h2>
-                <ul className="team-list">
-                    <li>Salah Ayman Fawzi Mostafa</li>
-                    <li>Sherif Mohamed Mohamed</li>
-                    <li>Basel Ashraf Ahmed Mohamed</li>
-                    <li>El Sayed Ahmed ElSayed Ahmed</li>
-                    <li>Aml Shehta Mohamed Elmonairy</li>
-                    <li>Mayar Mohamed Hassan Basuni</li>
-                    <li>Nada Saied Ibrahim Mohamed</li>
-                </ul>
-            </section> */}
-
             <section className="doc-section">
                 <h2>Model Development</h2>
                 <article className="model-article">

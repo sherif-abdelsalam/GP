@@ -1,5 +1,5 @@
 .about-container {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,20 +7,82 @@
   margin: 0 auto;
   margin-top: 4%;
   margin-bottom: 10%;
-  /*center this in the middle of the screen*/
   text-align: center;
+  overflow: hidden;
+  scroll-behavior: none;
+  overflow-y: hidden;
 }
+.about-container::after {
+  content: "";
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  background: url("../../public/bk-cricle.svg") no-repeat;
+  background-size: cover;
+  right: -60%;
+  bottom: 40%;
+  z-index: -1;
+}
+
+.about-container::before {
+  content: "";
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  background: url("../../public/bk-cricle.svg") no-repeat;
+  background-size: cover;
+  left: -50%;
+  top: 50%;
+  z-index: -1;
+}
+
+/*  */
+
 .title {
   color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 0;
 }
 
 .about-info p {
   color: #ddd;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.4;
+  letter-spacing: 1px;
   font-size: 18px;
+  font-weight: 500;
   color: var(--text-primary-color);
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 40px;
+  margin-left: 48px;
+}
+.team-members .team-title {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: xx-large;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.team-members li {
+  list-style: none;
+  color: var(--secondary-color);
+  text-align: start;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
 }
