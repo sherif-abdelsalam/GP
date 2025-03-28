@@ -1,7 +1,18 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.footer-container img {
+  width: 400px;
+}
 .footer {
-  background-color: #333;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px;
   text-align: center;
   width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: small;
 }

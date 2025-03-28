@@ -11,19 +11,19 @@ function Header(props) {
     return (
         <header className="header">
             <div>
-                <div className="logo-text">Paletto</div>
+                <a href="/" className="logo-text">Paletto</a>
             </div>
             <nav className="nav-list">
                 {/* HOME */}
                 <li className={isActive("/") ? "active" : ""}>
                     <Link to="/">
-                        <button onClick={props.scrollToHome}>Home</button>
+                        <button>Home</button>
                     </Link>
                 </li>
                 {/* ABOUT */}
                 <li className={isActive("/about") ? "active" : ""}>
                     <Link to="/about">
-                        <button onClick={props.scrollToAbout}>About</button>
+                        <button>About</button>
                     </Link>
                 </li>
                 {/* DOCS */}

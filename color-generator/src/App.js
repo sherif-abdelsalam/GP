@@ -33,31 +33,16 @@ function App() {
         if (startNowRef.current) {
             startNowRef.current.scrollIntoView({
                 behavior: "smooth",
-                block: "center",
+                block: "end",
             });
         }
     };
-
-    const aboutRef = useRef(null);
-    const scrollToAbout = () => {
-        if (aboutRef.current) {
-            aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    };
-
-    const homeRf = useRef(null);
-    const scrollToHome = () => {
-        if (homeRf.current) {
-            homeRf.current.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-    };
-
 
 
     return (
         <Router>
             <div>
-                <Header scrollToAbout={scrollToAbout} scrollToHome={scrollToHome} />
+                <Header />
 
                 <div id="content">
                     <Routes>
@@ -66,7 +51,7 @@ function App() {
                             element={
                                 <>
 
-                                    <WelcomeScreen scrollToMainArea={scrollToMainArea} ref={homeRf} />
+                                    <WelcomeScreen scrollToMainArea={scrollToMainArea} />
                                     <MainSectoin
                                         ref={startNowRef}
                                         setSelectedFile={setSelectedFile}
@@ -76,7 +61,6 @@ function App() {
                                     >
                                         <Result colorPalette={colorPalette} />
                                     </MainSectoin>
-                                    {/* <AboutApp ref={aboutRef} /> */}
                                     <Footer />
                                 </>
                             }

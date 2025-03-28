@@ -1,25 +1,19 @@
 import { forwardRef } from "react";
 import "./Welcome.css";
+import Title from "./Title";
 
-const WelcomeScreen = forwardRef(({ scrollToMainArea }, ref) => {
+const WelcomeScreen = forwardRef(({ scrollToMainArea }) => {
+    const textContent = "Paletto is your AI-powered color companion, helping designers generate, refine, and apply stunning palettes effortlessly. Unlock creativity and make your designs stand out with intelligent color suggestions and contrast optimization.";
+    const title = "Colors reimagined with AI";
+    const btnText = "Get Started";
+
     return (
-        <section className="welcome-screen" ref={ref}>
+        <div className="welcome-screen-container">
             <div className="background-circle"></div>
-            <h1>
-                Colors <span>reimagined</span><br />
-                with AI
-            </h1>
-            <p>
-                Paletto is your AI-powered color companion, helping designers generate, refine, and apply stunning palettes effortlessly. Unlock creativity and make your designs stand out with intelligent color suggestions and contrast optimization.
-            </p>
-            <div
-                className="btn"
-                onClick={scrollToMainArea}
-            >
-                Get Started
-            </div>
-        </section>
+            <Title onClick={scrollToMainArea} textContent={textContent} title={title} btnText={btnText} />
+        </div>
     );
 });
 
 export default WelcomeScreen;
+

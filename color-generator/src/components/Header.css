@@ -8,9 +8,7 @@
 
   position: sticky;
   top: 0;
-  z-index: 1;
-
-  /* Frosted glass effect */
+  z-index: 150;
   backdrop-filter: blur(180px);
 }
 
