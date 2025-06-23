@@ -28,13 +28,13 @@ function Header({ scrollToMainArea }) {
           </li>
         </ul>
       </nav>
-      {location.pathname === "/" && (
-        <div className="nav-action">
+      <div className="nav-action">
+        {location.pathname === "/" && (
           <button onClick={scrollToMainArea} className="get-in-touch-btn">
             Get Started
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </header>
   );
 }
