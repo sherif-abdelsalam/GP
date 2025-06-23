@@ -1,4 +1,3 @@
-
 import "./Result.css";
 
 function Result({ colorPalette }) {

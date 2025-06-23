@@ -1,18 +1,25 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 96px;
-  background-color: var(--primary-color-transparent);
-  height: 96px;
-  padding: 0 96px;
-
+  justify-content: space-between;
+  background-color: rgba(220, 172, 224, 0.08);
+  height: 80px;
+  padding: 0 60px;
   position: sticky;
   top: 0;
   z-index: 150;
-  backdrop-filter: blur(180px);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo-container {
+  flex: 1;
 }
 
 .logo-text {
+  display: flex;
+  align-items: center;
   font-size: 32px;
   font-family: "Glory", sans-serif;
   font-weight: 800;
@@ -24,26 +31,85 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block; /* Ensures text behaves properly */
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+.logo-text:hover {
+  transform: scale(1.02);
+}
+
+.nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
-  gap: 48px;
-}
-.nav-list li {
+  gap: 40px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav-list button {
-  background: none;
-  border: none;
-  font-size: 24px;
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--text-main-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-list a:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-color-transparent);
+}
+
+.nav-list .active a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.nav-list .active a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 1px;
+}
+
+.nav-action {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.get-in-touch-btn {
+  background: linear-gradient(to right, #8244f4, #6b2bd9);
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
 }
-.nav-list button:hover {
-  color: var(--primary-color);
-}
-.active button {
-  border-bottom: 2px solid var(--primary-color);
-  color: var(--primary-color);
+
+.get-in-touch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(130, 68, 244, 0.3);
 }

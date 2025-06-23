@@ -104,4 +104,3 @@ const MainSection = forwardRef(
 );
 
 export default MainSection;
-

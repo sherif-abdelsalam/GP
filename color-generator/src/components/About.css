@@ -12,29 +12,6 @@
   scroll-behavior: none;
   overflow-y: hidden;
 }
-.about-container::after {
-  content: "";
-  width: 100vw;
-  height: 100vw;
-  position: absolute;
-  background: url("../../public/bk-cricle.svg") no-repeat;
-  background-size: cover;
-  right: -60%;
-  bottom: 40%;
-  z-index: -1;
-}
-
-.about-container::before {
-  content: "";
-  width: 100vw;
-  height: 100vw;
-  position: absolute;
-  background: url("../../public/bk-cricle.svg") no-repeat;
-  background-size: cover;
-  left: -50%;
-  top: 50%;
-  z-index: -1;
-}
 
 /*  */
 
