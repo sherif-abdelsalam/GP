@@ -161,22 +161,6 @@
   background: rgba(255, 107, 107, 0.15);
 }
 
-.navbar-list li.active a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 2px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  border-radius: 1px;
-}
-
 /* Actions */
 .navbar-actions {
   display: flex;
