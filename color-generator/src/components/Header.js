@@ -82,22 +82,6 @@ function Header({ scrollToMainArea }) {
 
         {/* Actions */}
         <div className="navbar-actions">
-          {location.pathname === "/" && (
-            <button onClick={scrollToMainArea} className="cta-button">
-              <span>Get Started</span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </button>
-          )}
-
           {/* Theme Toggle */}
           <button
             className="theme-toggle"
@@ -164,17 +148,6 @@ function Header({ scrollToMainArea }) {
                 </Link>
               </li>
             </ul>
-            {location.pathname === "/" && (
-              <button
-                onClick={() => {
-                  scrollToMainArea();
-                  setIsMobileMenuOpen(false);
-                }}
-                className="mobile-cta-button"
-              >
-                Get Started
-              </button>
-            )}
           </navbar>
         </div>
       </div>
