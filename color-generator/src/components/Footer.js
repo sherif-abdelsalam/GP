@@ -19,9 +19,7 @@ function Footer() {
         />
         <img src="/plugin.jpg" alt="Footer" />
       </div>
-      {/* <div className="footer">
-                {copyright}
-            </div> */}
+      <div className="footer">{copyright}</div>
     </>
   );
 }
