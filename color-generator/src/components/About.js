@@ -66,7 +66,8 @@ function AboutApp() {
     {
       name: "Sherif Mohamed Mohamed Abdelsalam",
       role: "Full Stack Developer",
-      avatar: "👨‍💻",
+      image:
+        "https://res.cloudinary.com/dvfebj6lc/image/upload/v1750741206/me_snsxlb.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/sherif-abdelsalam/",
         github: "https://github.com/sherif-abdelsalam",
@@ -196,9 +197,17 @@ function AboutApp() {
                 className="team-card"
                 style={{ "--card-index": index }}
               >
-                <div className="member-avatar">
-                  <span className="avatar-emoji">{member.avatar}</span>
-                </div>
+                {member.image ? (
+                  <img
+                    className="member-avatar"
+                    src={member.image}
+                    alt="Sherif Abdelsalam"
+                  />
+                ) : (
+                  <div className="member-avatar">
+                    <span className="avatar-emoji">{member.avatar}</span>
+                  </div>
+                )}
                 <div className="member-info">
                   <h3 className="member-name">{member.name}</h3>
                   <p className="member-role">{member.role}</p>
