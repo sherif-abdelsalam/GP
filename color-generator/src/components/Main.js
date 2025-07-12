@@ -106,7 +106,7 @@ const MainSection = forwardRef(
         {/* Loader */}
         {loading && <Loader />}
 
-        <div className="color-palette-container">
+        {/* <div className="color-palette-container">
           {children}
           <div>
             <button className="btn new-palette" onClick={handleChangePalette}>
@@ -114,6 +114,7 @@ const MainSection = forwardRef(
             </button>
           </div>
         </div>
+         */}
       </div>
     );
   }
