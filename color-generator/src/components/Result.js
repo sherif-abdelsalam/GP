@@ -1,10 +1,11 @@
 import "./Result.css";
 
 function Result({ colorPalette }) {
+  console.log(colorPalette); // Debug log
   return (
     <div id="result">
       <div className="box">
-        {Array(4) // Create 6 boxes dynamically
+        {Array(4) // Create 4 boxes dynamically for the color palette
           .fill(null)
           .map((_, index) => (
             <div key={index}>

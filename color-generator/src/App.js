@@ -57,7 +57,7 @@ function App() {
                     setColorPalette={setColorPalettes}
                     ChangePalette={ChangePalette}
                   >
-                    <Result colorPalette={colorPalette} />
+                    <Result colorPalette={colorPalettes} />
                   </MainSectoin>
                   <Footer />
                 </>
